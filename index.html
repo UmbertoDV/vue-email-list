@@ -50,7 +50,7 @@
 	<body>
 		<div id="app">
 			<h1>LISTA EMAIL</h1>
-			<ul>
+			<ul v-if="randomMailsList.length >= 10">
 				<li v-for="email in randomMailsList">{{email}}</li>
 			</ul>
 		</div>
